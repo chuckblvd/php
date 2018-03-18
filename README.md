@@ -1,4 +1,4 @@
-# Simplified mysql queries using OOP
+# Simplified MySql queries using OOP
 ----------------------------------------------------
 Example 1
 ----------------------------------------------------
@@ -8,6 +8,7 @@ Example 1
 $users = $db->get_results("SELECT name, email FROM users");
 
 foreach($users as $user){
+	// Access data using object syntax
 	echo $user->name;
 	echo $user->email;
 }
@@ -27,8 +28,9 @@ echo $user->email;
 Example 3
 ----------------------------------------------------
 
-$var = $db->get_var("SELECT count(*) FROM users");
+// Get one variable from the database and print it out..
 
+$var = $db->get_var("SELECT count(*) FROM users");
 echo $var;
 
 ----------------------------------------------------
