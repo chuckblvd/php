@@ -7,7 +7,7 @@ define('DB_PASSWORD','201314328');
 define('DB_NAME','test');
 
 define('BRAND_NAME','test');
-define('BASE_URL','http://localhost/new_project/');
+define('BASE_URL','http://localhost/php/');
 
 define('PATH_LIBRARIES','lib/' );
 define('PATH_INCLUDES','inc/' );
