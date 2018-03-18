@@ -154,7 +154,7 @@ class db{
 	function delete($table_name,$id,$val,$output=OBJECT){
 		$query = "SELECT * FROM " . $table_name;
 		$this->check_query($query);
-		$query = "DELETE FROM " . $table_name . " WHERE " . $id . " = " . $val;
+		$query = "DELETE FROM " . $table_name . " WHERE " . $id . " = '" . $val . "'";
 		$this->check_query($query);
 	}
 
