@@ -67,8 +67,7 @@ class db{
 		return $result;
 	}
 
-	function get_row($query=null,$y=0,$output=OBJECT)
-	{
+	function get_row($query=null,$y=0,$output=OBJECT){
 		if($query){
 			$this->query($query);
 		}
