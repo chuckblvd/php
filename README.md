@@ -8,7 +8,6 @@ Example 1
 $users = $db->get_results("SELECT name, email FROM users");
 
 foreach($users as $user){
-	// Access data using object syntax
 	echo $user->name;
 	echo $user->email;
 }
@@ -57,8 +56,6 @@ $values = array(
 
 $var = $db->insert($table_name,$values);
 
-// INSERT INTO Some_Table VALUES ('John Doe','jd@example.com')
-
 ----------------------------------------------------
 Example 6
 ----------------------------------------------------
@@ -74,7 +71,6 @@ $values = array(
 
 $var = $db->update($table_name,$values,'name','John Doe');
 
-// UPDATE Some_Table SET name = 'John Doe', email = 'jd@example.com' WHERE name = 'John Doe'
 
 ----------------------------------------------------
 Example 7
@@ -85,5 +81,3 @@ Example 7
 $table_name = "Some_Table";
 
 $var = $db->delete($table_name,'name','John Doe');
-
-// DELETE FROM Some_Table WHERE name = 'John Doe'
