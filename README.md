@@ -29,7 +29,7 @@ Example 3
 
 // Get one variable from the database and print it out..
 
-$var = $db->get_var("SELECT count(*) FROM users");
+$var = $db->get_var("SELECT count(id) FROM users");
 echo $var;
 
 ----------------------------------------------------
