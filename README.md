@@ -54,7 +54,7 @@ $values = array(
 	"email" => "johndoe@example.com"
 );
 
-$var = $db->insert($table_name,$values);
+$db->insert($table_name,$values);
 
 ----------------------------------------------------
 Example 6
@@ -69,7 +69,7 @@ $values = array(
 	"email" => "jd@example.com"
 );
 
-$var = $db->update($table_name,$values,'name','John Doe');
+$db->update($table_name,$values,'name','John Doe');
 
 
 ----------------------------------------------------
@@ -80,4 +80,4 @@ Example 7
 
 $table_name = "Some_Table";
 
-$var = $db->delete($table_name,'name','John Doe');
+$db->delete($table_name,'name','John Doe');
