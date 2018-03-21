@@ -9,6 +9,20 @@ include(PATH_LIBRARIES.'libraries.php');
 </head>
 <body>
 
+	<?php
+		$values = array(
+			'last_name' => 'Gorospe'
+		);
+
+		$retrieve_ids = $db->get_results("SELECT id FROM list_table");
+
+		foreach($retrieve_ids as $ids){
+			$db->update('list_table',$values,'id',$ids->id);
+		}
+
+		// $update = $db->update('list_table',$values,'id','10');
+	?>
+
 	<!-- GET RESULTS SAMPLE -->
 	<?php
 	$list_table = $db->get_results('SELECT * FROM list_table');
@@ -41,6 +55,7 @@ include(PATH_LIBRARIES.'libraries.php');
 	echo $query;
 	?>
 	<!-- ###################### -->
+
 
 	
 

@@ -36,6 +36,7 @@ class db{
 	}
 
 	function query($query,$output=OBJECT){
+		$this->last_result = null;
 		$this->check_query($query);
 		if($this->result){	
 			$i=0;
